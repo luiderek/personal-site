@@ -47,14 +47,14 @@ h3 {
   }
 
   i {
-    top: calc(50% - 25px);
-    left: -26px;
+    top: calc(50% - 15px);
+    left: -15px;
     position: absolute;
     border: 1px solid var(--color-border);
     background: var(--color-background);
     border-radius: 8px;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
   }
 
   .item:before {
