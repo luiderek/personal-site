@@ -14,7 +14,7 @@
 
 <style scoped>
 .item {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   display: flex;
 }
 
