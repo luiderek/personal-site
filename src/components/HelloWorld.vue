@@ -11,8 +11,7 @@ defineProps({
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      I'm currently in the process of building a portfolio.<br/>
-      This is very much a placeholder, don't mind me.
+      I'm a web developer located in southern California. I'm currently looking for entry level positions, and I've mostly been working with JavaScript and React.
     </h3>
   </div>
 </template>
