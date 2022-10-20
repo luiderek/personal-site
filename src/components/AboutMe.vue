@@ -8,12 +8,14 @@ defineProps({
 </script>
 
 <template>
-  <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h3>
-      I'm a web developer located in southern California. I'm currently looking for entry level positions, and I've
-      mostly been working with JavaScript and React.
-    </h3>
+  <div class="wrapper">
+    <div class="greetings">
+      <h1 class="green">Hi, I'm Derek.</h1>
+      <h3>
+        I'm a web developer located in southern California. I'm currently looking for entry level positions, and I've
+        mostly been working with JavaScript and React.
+      </h3>
+    </div>
   </div>
 </template>
 

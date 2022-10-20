@@ -1,21 +1,19 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import AboutMe from './components/AboutMe.vue'
 import Sidebar from './components/Sidebar.vue'
-import Socials from './components/Socials.vue';
+import SocialIcons from './components/SocialIcons.vue';
 </script>
 
 <template>
   <header>
-    <div class="wrapper">
-      <HelloWorld msg="Hi, I'm Derek." />
-    </div>
+    <AboutMe />
   </header>
 
   <main>
     <Sidebar />
   </main>
 
-  <Socials />
+  <SocialIcons />
 </template>
 
 <style scoped>
