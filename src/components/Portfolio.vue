@@ -45,17 +45,6 @@ main {
     flex-wrap: wrap;
   }
 
-  div.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 50px;
-    padding: 0 2rem;
-  }
 
-
-}
-
-#home {
-  background-color: green;
 }
 </style>
