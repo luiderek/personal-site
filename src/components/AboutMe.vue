@@ -1,21 +1,10 @@
-<script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true
-  }
-})
-</script>
-
 <template>
-  <div class="wrapper">
-    <div class="greetings">
-      <h1 class="green">Hi, I'm Derek.</h1>
-      <h3>
-        I'm a web developer located in southern California. I'm currently looking for entry level positions, and I've
-        mostly been working with JavaScript and React.
-      </h3>
-    </div>
+  <div class="greetings">
+    <h1 class="green">Hi, I'm Derek.</h1>
+    <h3>
+      I'm a web developer located in southern California. I'm currently looking for entry level positions, and I've
+      mostly been working with JavaScript and React.
+    </h3>
   </div>
 </template>
 
@@ -23,15 +12,13 @@ defineProps({
 h1 {
   font-weight: 500;
   font-size: 2.6rem;
-  top: -10px;
 }
 
 h3 {
   font-size: 1.2rem;
 }
 
-.greetings h1,
-.greetings h3 {
+.greetings>* {
   text-align: center;
 }
 

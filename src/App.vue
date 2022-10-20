@@ -1,47 +1,45 @@
-<script setup>
-import AboutMe from './components/AboutMe.vue'
-import Sidebar from './components/Sidebar.vue'
-import SocialIcons from './components/SocialIcons.vue';
-</script>
-
 <template>
-  <header>
-    <AboutMe />
-  </header>
-
-  <main>
-    <Sidebar />
-  </main>
-
-  <SocialIcons />
+  <div class="container">
+    <router-view v-slot="{Component}">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" :key="$route.path"></component>
+      </transition>
+    </router-view>
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-width: 600px;
+<style lang="css">
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.container {
   margin-inline: auto;
 }
 
-main {
-  max-width: 500px;
-  margin-inline: auto;
-  display: flex;
-  place-items: center;
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
 }
 
 @media (min-width: 1024px) {
-
-  header {
+  body {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
   }
 }
 </style>
