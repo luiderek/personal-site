@@ -5,8 +5,8 @@
 
     <br />
 
-    <router-link to="/">snake</router-link>
-
+    <router-link to="/paper">paper</router-link>
+    <p>experimenting with paper.js in a single file vue component. click anywhere.</p>
 
     <br />
     <br />
@@ -21,5 +21,6 @@
 <style>
 #sandbox {
   text-align: center;
+  padding-top: 5rem;
 }
 </style>

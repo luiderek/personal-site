@@ -10,6 +10,11 @@ const routes = [
     component: () => import('@/views/Sandbox.vue')
   },
   {
+    path: '/paper',
+    name: 'Paper',
+    component: () => import('@/views/Paper.vue')
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
     component: () => import('@/views/NotFound.vue')
