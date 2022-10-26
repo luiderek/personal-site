@@ -11,7 +11,7 @@ import SidebarItem from './SidebarItem.vue'
     React, Node.js, Express, and PostgreSQL.<br>
     <a href="https://luiderek.github.io/vip-player/" target="_blank" rel="noopener">Study Playlist</a> - A remake of a
     flash music playlist that I used in college.<br>
-    <router-link to="/sandbox">Sandbox</router-link> - A place for me to experiment around with code.
+    <!-- <router-link to="/sandbox">Sandbox</router-link> - A place for me to experiment around with code. -->
   </SidebarItem>
 
 </template>
